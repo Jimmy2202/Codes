@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1607457495 source:c:\users\arthur\documents\trabalho 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<conio.h>
+	<windows.h>
+	"estacionamento.h"
+
+1607460790 source:c:\users\arthur\documents\trabalho 2\estacionamento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	<ctype.h>
+	"estacionamento.h"
+
+1607357768 c:\users\arthur\documents\trabalho 2\estacionamento.h
+
+1607460792 source:c:\users\arthur\documents\trab2_arthurdeoliveirapinto\trabalho 2\estacionamento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	<ctype.h>
+	"estacionamento.h"
+
+1607357770 c:\users\arthur\documents\trab2_arthurdeoliveirapinto\trabalho 2\estacionamento.h
+
+1621009390 source:c:\users\arthur\documents\trab2_arthurdeoliveirapinto\trabalho 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<conio.h>
+	<windows.h>
+	"estacionamento.h"
+
