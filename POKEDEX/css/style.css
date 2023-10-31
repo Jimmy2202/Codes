@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(201, 13, 13), rgb(255, 255, 255));
+    min-height: 100%;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%,20%);
+    height: 18%;
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);/*(minimo, desejavel, maximo)*/
+}
+
+.pokemon_name {
+    color: #211919aa;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;/*PREENCHIMENTO EM DENTRO DO INPUT*/
+    outline: none;/* ELIMINAR A COR DA BORDA AO CLICAR NO INPUT*/
+    border: 2px #333; 
+    border-radius: 5px; /* CURVATURA DA BORDA*/ 
+    font-weight: 600;/* LARGURA DA FONTE */
+    color: rgb(39, 38, 38);
+    font-size: clamp(8px, 1vw, 1rem);/*(minimo, desejavel, maximo)*/
+    box-shadow: -3px 4px 0 #888, -5px 6px 0 #1a1919;/* SOMBRA NO ELEMENTO X |Y |DESFOQUE DA SOMBRA|COR DA SOMBRA*/
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%,0);
+    display: flex;
+    gap: 20px;/* Define um espaço de 20 pixels entre os elementos filhos */
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: clamp(8px, 1vw, 1rem);
+    font-weight: 600;
+    color: aliceblue;
+    background-color: #1a1919;
+    box-shadow: -3px 4px 0 black;
+}
+
+.button:hover{
+    background-color: aliceblue;
+    color: #1a1919;
+}
+
+.button:active {
+    box-shadow: inset -5px 5px 0 white;
+    font-size: 0.9rem;
+}
