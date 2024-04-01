@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Moulpali", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid rgb(255, 217, 0);*/
+}
+
+.txt_topo span {
+    color: rgb(0, 0, 0);
+}
+
+.interface {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 3%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px rgba(252, 1, 1, 0.281);
+}
+
+header > .interface:hover{
+    a {
+        animation: animation_black_white 3s ease-in-out infinite alternate;
+    }
+
+    animation: animation_black 3s ease-in-out alternate infinite;
+}
+
+header a {
+    color: rgb(138, 136, 136);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.flex a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu a{
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.4);
+    transition: .2s;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.btn_contato{
+    padding: 0;
+}
+
+.btn_contato a{
+    width: 100%;
+    height: 100%;
+}
+
+.btn_contato button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    box-shadow: -3px 4px 5px rgb(99, 0, 0);
+}
+
+.btn_contato button:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 4px 0 rgb(73, 65, 65);
+    color: rgb(75, 0, 0);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+.menu_mobile{
+    display: none;
+}
+
+/* TOPO */
+section.top-do-site{
+    padding: 40px 4%;
+}
+
+section.sobre{
+    padding: 5px 4%;
+}
+
+.div_topo{
+    padding: 40px 0px;
+    background-color: rgba(184, 1, 1, 0.589);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(233, 102, 102, 0.678);
+}
+
+.interface_sobre{
+    padding: 40px 0px;
+}
+
+.div_topo:hover{
+    animation: animation_red 2s ease-in-out infinite alternate;
+
+    .txt_topo span {
+        animation: animation_word 2s ease-in-out infinite alternate;
+    }
+}
+
+
+section.top-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.top-do-site h1{
+    color: white;
+    font-size: 50px;
+}
+
+.top-do-site {
+    box-shadow: 0 0 40px 2px rgba(255, 255, 255, 0.068);
+}
+
+.txt_sobre p, h1{
+    color: white;
+}
+
+.txt_sobre a{
+    color: rgba(255, 244, 244, 0.774);
+    transition: 2s;
+}
+
+.txt_sobre a:hover{
+    transform: scale(1.1);
+}
+
+.txt_sobre .linkedin:hover{
+    color: blue;
+}
+
+.txt_sobre .github:hover{
+    color: rgb(255, 0, 0);
+}
+
+.txt_sobre h1{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.txt_sobre span{
+    color: red;
+}
+
+.top-do-site p{
+    color: white;
+    margin: 40px 0;
+    font-size: 17px;
+}
+
+@keyframes float{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+@keyframes animation_black{
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+    100%{
+        background-color: rgba(253, 4, 4, 0.527);
+    }
+}
+
+@keyframes animation_red{
+    0%{
+        background-color: rgb(92, 0, 0);
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes animation_word{
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes animation_black_white{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.img_topo{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+.projetos h1{
+    color: blue;
+}
+
+section.portfolio{
+    padding: 5px 4%;
+    box-shadow: 0 0 40px 6px rgba(255, 255, 255, 0.096);
+}
+
+.interface_portfolio {
+    padding: 5px 0px;
+}
+
+.interface_portfolio .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt_port{
+    position: absolute;
+    text-align: center;
+}
+
+.txt_port p,h1{
+    color: white;
+}
+
+.txt_port h1{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.txt_port span{
+    color: red;
+}
+
+.txt_port{
+    position: relative;
+}
+
+.img_port{
+    width: 260px;
+    height: 360px;
+    border-radius: 15px;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.img_port:hover{
+    background-color: white;
+    color: red;
+    font-size: larger;
+    box-shadow: 0 0 40px 9px red;
+}
+
+.container_proj{
+    display: block;
+    padding: 2%;
+    border-right: 1px solid rgba(85, 85, 85, 0.336);
+}
+
+.container_proj_1{
+    padding: 2%;
+}
+
+.text_project a{
+    color: white;
+    transition: 2s;
+}
+
+.text_project a:hover{
+    transform: scale(1.1);
+}
+
+.text_project{
+    text-align: center;
+}
+
+footer {
+    padding: 4%;
+}
+
+footer .interface{
+    font-size: 100%;
+    color: white;
+}
+
+.contato span{
+    color: red;
+}
+
+@media screen and (max-width:900px){
+    header {
+        width: 100vw;
+    }
+
+    header > .interface{
+        width: 100%;
+        font-size: 6px;
+        padding: 1.5rem 8rem;
+        align-items: center;
+        justify-content:center;
+    }
+
+    /*
+    .menu_mobile{
+        display: block;
+    }
+
+    .menu a{
+        display: none;
+    }
+    */
+
+    .btn_contato{
+        width: 70%;
+        height: 50%;
+    }
+
+    .btn_contato button {
+        font-size: 400%;
+        width: 150%;
+    }
+
+    .btn_contato button:hover {
+        transform: scale(1.0);
+        transition: .2s;
+    }
+    
+    .logotipo{
+        width: 50%;
+        height: 50%;
+    }
+
+    .logotipo img{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .top-do-site{
+        width: 100vw;
+        padding: 40px 80%;
+    }
+
+    .div_topo{
+        width: 100%;
+        padding: 10px 10px; 
+    }
+
+    .div_topo .flex{
+        flex-wrap: wrap;
+    }
+
+    .sobre{
+        width: 100vw;
+    }
+
+    .interface_sobre{
+        width: 100%;
+    }
+
+    .interface_sobre .flex{
+        flex-wrap: wrap;
+    }
+
+    .portfolio{
+        width: 100vw;
+    }
+
+    .interface_portfolio{
+        width: 100%;
+    }
+
+    .interface_portfolio .flex{
+        flex-wrap: wrap;
+        transform: scale(0.8);
+    }
+
+    .text_project a{
+        display:block;
+    }
+
+    .container_proj {
+        width: 100%;
+        border-bottom: 1px solid rgba(85, 85, 85, 0.336);
+        border-right: none;
+        text-align: center;
+    }
+
+    .container_proj_1 {
+        width: 100%;
+        border-bottom: 1px solid rgba(85, 85, 85, 0.336);
+        border-right: none;
+        text-align: center;
+    }
+
+    header button{
+        transform: scale(0.3);
+        flex-shrink: 0;
+        margin: 0px 0px;
+    }
+
+    footer h1{
+        font-size: 20px;
+    }
+
+    footer h2{
+        font-size: small;
+    }
+}
